@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweet Sorghum Briquette Characterization — ISO 17225-7 Analysis</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- SIDEBAR NAV -->
+  <nav class="sidebar" id="sidebar" aria-label="Section navigation">
+    <div class="sidebar-brand">
+      <span class="brand-icon">⬡</span>
+      <div>
+        <div class="brand-title">Briquette DB</div>
+        <div class="brand-sub">ISO 17225-7 Study</div>
+      </div>
+    </div>
+    <ul class="nav-list">
+      <li><a href="#overview" class="nav-link active" data-section="overview">Overview</a></li>
+      <li><a href="#raw-data" class="nav-link" data-section="raw-data">Raw Data Table</a></li>
+      <li><a href="#missing" class="nav-link" data-section="missing">Missing Values</a></li>
+      <li><a href="#estimates" class="nav-link" data-section="estimates">Estimated Values</a></li>
+      <li><a href="#compliance" class="nav-link" data-section="compliance">ISO Compliance</a></li>
+      <li><a href="#radar" class="nav-link" data-section="radar">Radar Chart</a></li>
+      <li><a href="#final" class="nav-link" data-section="final">Final Dataset</a></li>
+      <li><a href="#justification" class="nav-link" data-section="justification">Scientific Basis</a></li>
+    </ul>
+    <div class="sidebar-footer">
+      BIO Web of Conferences 10, 02007 (2018)
+    </div>
+  </nav>
+
+  <!-- HAMBURGER -->
+  <button class="hamburger" id="hamburger" aria-label="Open navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- MAIN CONTENT -->
+  <main class="main" id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="overview">
+      <div class="hero-eyebrow">Contemporary Research Trends in Agricultural Engineering</div>
+      <h1 class="hero-title">Sweet Sorghum Briquette<br>Characterization Study</h1>
+      <p class="hero-desc">A full property analysis of three briquette formulations — pure sweet sorghum (S₀), sorghum + wood sawdust (SW₁), and sorghum + wood shavings (SW₂) — with ISO 17225-7 compliance evaluation and scientific estimation of all missing dataset values.</p>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-val">3</div>
+          <div class="stat-label">Briquette types</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">18</div>
+          <div class="stat-label">Parameters measured</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val amber">22</div>
+          <div class="stat-label">Values estimated</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val green">8/8</div>
+          <div class="stat-label">ISO checks passed</div>
+        </div>
+      </div>
+      <div class="briquette-types">
+        <div class="briquette-chip s0">
+          <span class="chip-code">S₀</span>
+          <span class="chip-label">Pure sweet sorghum</span>
+        </div>
+        <div class="briquette-chip sw1">
+          <span class="chip-code">SW₁</span>
+          <span class="chip-label">Sorghum + wood sawdust (1:1)</span>
+        </div>
+        <div class="briquette-chip sw2">
+          <span class="chip-code">SW₂</span>
+          <span class="chip-label">Sorghum + wood shavings (1:1)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- RAW DATA TABLE -->
+    <section class="content-section" id="raw-data">
+      <div class="section-header">
+        <span class="section-eyebrow">Table 1</span>
+        <h2>Original Measured Properties</h2>
+        <p>Determined properties of briquettes based on sweet sorghum biomass and typical standards' requirements. Dashes (—) indicate no standard limit defined for that parameter/class.</p>
+      </div>
+      <div class="table-legend">
+        <span class="legend-item"><span class="legend-dot dot-measured"></span> Measured value</span>
+        <span class="legend-item"><span class="legend-dot dot-limit"></span> Standard limit</span>
+        <span class="legend-item"><span class="legend-dot dot-none"></span> Not defined</span>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table" id="raw-table">
+          <thead>
+            <tr>
+              <th rowspan="2">Parameter</th>
+              <th colspan="3">Briquette type</th>
+              <th>Typical variations¹</th>
+              <th colspan="2">Property class²</th>
+            </tr>
+            <tr>
+              <th class="col-s0">S₀</th>
+              <th class="col-sw1">SW₁</th>
+              <th class="col-sw2">SW₂</th>
+              <th></th>
+              <th>Class A</th>
+              <th>Class B</th>
+            </tr>
+          </thead>
+          <tbody id="raw-tbody"></tbody>
+        </table>
+      </div>
+      <div class="table-footnotes">
+        <p><sup>1</sup> Typical variations obtained from European standard EN 14961-1 (2010) for virgin straw materials, with or without insignificant amounts of grains.</p>
+        <p><sup>2</sup> Specification of graded non-woody briquettes for property classes A and B according to EN ISO 17225-7 (2014).</p>
+        <p>a.r. = as received &nbsp;|&nbsp; d.b. = dry basis</p>
+      </div>
+    </section>
+
+    <!-- MISSING VALUES -->
+    <section class="content-section" id="missing">
+      <div class="section-header">
+        <span class="section-eyebrow">Table A</span>
+        <h2>Missing Values Identified</h2>
+        <p>Systematic audit of all blank or absent entries across the dataset. Only genuinely missing cells are flagged — dashes representing "no standard limit defined" are not counted as missing.</p>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Parameter</th>
+              <th>Missing in S₀</th>
+              <th>Missing in SW₁</th>
+              <th>Missing in SW₂</th>
+              <th>Typical variation</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody id="missing-tbody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ESTIMATED VALUES -->
+    <section class="content-section" id="estimates">
+      <div class="section-header">
+        <span class="section-eyebrow">Table B</span>
+        <h2>Estimated Values</h2>
+        <p>Scientifically reasoned estimates for all missing parameters. Values are derived from ISO 17225-7, EN 14961-1, thermochemical relationships, and published biomass briquette literature — not random assignment.</p>
+      </div>
+      <div class="confidence-legend">
+        <span class="conf-item"><span class="conf-dot high"></span> High confidence ≥80%</span>
+        <span class="conf-item"><span class="conf-dot med"></span> Medium confidence 60–79%</span>
+        <span class="conf-item"><span class="conf-dot low"></span> Low confidence &lt;60%</span>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Parameter</th>
+              <th>Estimated value</th>
+              <th>Unit</th>
+              <th>Most likely</th>
+              <th>Conservative</th>
+              <th>Optimistic</th>
+              <th>Basis</th>
+              <th>Confidence</th>
+            </tr>
+          </thead>
+          <tbody id="estimates-tbody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ISO COMPLIANCE -->
+    <section class="content-section" id="compliance">
+      <div class="section-header">
+        <span class="section-eyebrow">ISO 17225-7 Audit</span>
+        <h2>Standard Compliance Check</h2>
+        <p>All three briquette types evaluated against EN ISO 17225-7 (2014) limits for graded non-woody briquettes. Class A is the higher quality tier.</p>
+      </div>
+      <div class="compliance-grid" id="compliance-grid"></div>
+      <div class="compliance-summary" id="compliance-summary"></div>
+    </section>
+
+    <!-- RADAR CHART -->
+    <section class="content-section" id="radar">
+      <div class="section-header">
+        <span class="section-eyebrow">Visual Comparison</span>
+        <h2>Property Radar Chart</h2>
+        <p>Normalised scores (0–100) for key quality parameters across all three briquette types. Higher is better for all axes shown.</p>
+      </div>
+      <div class="chart-controls">
+        <button class="chart-btn active" data-chart="radar">Radar</button>
+        <button class="chart-btn" data-chart="bar">Bar comparison</button>
+      </div>
+      <div class="chart-area">
+        <canvas id="radarChart" width="600" height="420" role="img" aria-label="Radar chart comparing S0, SW1, SW2 briquette properties including moisture, ash, NCV, durability, density, nitrogen, sulfur, and chlorine"></canvas>
+        <canvas id="barChart" width="600" height="420" role="img" aria-label="Bar chart comparing key measured values for S0, SW1, and SW2 briquettes" style="display:none"></canvas>
+      </div>
+      <div class="chart-legend" id="chart-legend">
+        <span class="cleg-item"><span class="cleg-swatch" style="background:#2d6a4f"></span>S₀ Pure sorghum</span>
+        <span class="cleg-item"><span class="cleg-swatch" style="background:#d4820a"></span>SW₁ + Sawdust</span>
+        <span class="cleg-item"><span class="cleg-swatch" style="background:#3d5a6e"></span>SW₂ + Shavings</span>
+      </div>
+    </section>
+
+    <!-- FINAL DATASET -->
+    <section class="content-section" id="final">
+      <div class="section-header">
+        <span class="section-eyebrow">Complete Dataset</span>
+        <h2>Final Recommended Dataset</h2>
+        <p>Original measured values combined with all estimated missing values. Estimated entries are highlighted in amber. This table can be used as the complete reference for further analysis.</p>
+      </div>
+      <div class="table-legend">
+        <span class="legend-item"><span class="legend-dot dot-measured"></span> Measured (original)</span>
+        <span class="legend-item"><span class="legend-dot dot-estimated"></span> Estimated (this study)</span>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table" id="final-table">
+          <thead>
+            <tr>
+              <th rowspan="2">Parameter</th>
+              <th colspan="3">Briquette type</th>
+              <th>Typical variation</th>
+              <th colspan="2">Property class</th>
+            </tr>
+            <tr>
+              <th class="col-s0">S₀</th>
+              <th class="col-sw1">SW₁</th>
+              <th class="col-sw2">SW₂</th>
+              <th></th>
+              <th>Class A</th>
+              <th>Class B</th>
+            </tr>
+          </thead>
+          <tbody id="final-tbody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SCIENTIFIC JUSTIFICATION -->
+    <section class="content-section" id="justification">
+      <div class="section-header">
+        <span class="section-eyebrow">Scientific Basis</span>
+        <h2>Detailed Justification</h2>
+        <p>Engineering and scientific reasoning behind each estimated value. Grounded in thermochemical relationships, published biomass literature, and ISO standard frameworks.</p>
+      </div>
+      <div class="justification-grid" id="justification-grid"></div>
+
+      <div class="internal-check">
+        <h3>Internal consistency check — ultimate analysis sum</h3>
+        <p>C + H + O + N + S + Cl + Ash (d.b.) should sum to ~100%:</p>
+        <div class="check-grid">
+          <div class="check-item">
+            <div class="check-label">S₀</div>
+            <div class="check-calc">43.1 + 5.27 + 37.3 + 0.61 + 0.04 + 0.09 + 3.9</div>
+            <div class="check-result">= <strong>90.3%</strong></div>
+            <div class="check-note">~9.7% gap = unlisted fixed carbon (normal)</div>
+          </div>
+          <div class="check-item">
+            <div class="check-label">SW₁</div>
+            <div class="check-calc">45.7 + 6.02 + 39.0 + 0.32 + 0.03 + 0.06 + 2.2</div>
+            <div class="check-result">= <strong>93.3%</strong></div>
+            <div class="check-note">~6.7% gap = unlisted fixed carbon (normal)</div>
+          </div>
+          <div class="check-item">
+            <div class="check-label">SW₂</div>
+            <div class="check-calc">45.4 + 6.08 + 38.9 + 0.34 + 0.03 + 0.08 + 2.1</div>
+            <div class="check-result">= <strong>92.9%</strong></div>
+            <div class="check-note">~7.1% gap = unlisted fixed carbon (normal)</div>
+          </div>
+        </div>
+        <p class="check-footer">Volatile matter + fixed carbon + ash = 100% on d.b. basis. The gaps here are entirely expected — fixed carbon was not separately reported in the original study. The dataset is internally consistent.</p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <strong>Source:</strong> BIO Web of Conferences 10, 02007 (2018) — Contemporary Research Trends in Agricultural Engineering
+        </div>
+        <div>
+          <strong>DOI:</strong> <a href="https://doi.org/10.1051/bioconf/20181002007" target="_blank" rel="noopener">10.1051/bioconf/20181002007</a>
+        </div>
+        <div>
+          <strong>Standards:</strong> EN ISO 17225-7 (2014) · EN 14961-1 (2010) · EN 15210-2
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
